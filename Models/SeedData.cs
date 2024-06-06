@@ -1,6 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Humanizer.Localisation;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using MvcMovie.Data;
+using MvcMovie.Migrations;
 using System;
 using System.Linq;
 
@@ -22,31 +24,43 @@ public static class SeedData
             context.Movie.AddRange(
                 new Movie
                 {
-                    Title = "When Harry Met Sally",
-                    ReleaseDate = DateTime.Parse("1989-2-12"),
-                    Genre = "Romantic Comedy",
-                    Price = 7.99M
+                    Title = "Iboy",
+                    ReleaseDate = DateTime.Parse("2017-01-27"),
+                    Genre = "Sci-Fi",
+                    Price = 90.00M,
+                    Rating = "A",
                 },
                 new Movie
                 {
-                    Title = "Ghostbusters ",
-                    ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
-                    Price = 8.99M
+                    Title = "Snowden ",
+                    ReleaseDate = DateTime.Parse("2013-02-23"),
+                    Genre = "Sci-Fi",
+                    Price = 90.00M,
+                    Rating = "A",
                 },
                 new Movie
                 {
-                    Title = "Ghostbusters 2",
-                    ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
-                    Price = 9.99M
+                    Title = "Prinson Break",
+                    ReleaseDate = DateTime.Parse("2015-02-10"),
+                    Genre = "Thriller",
+                    Price = 89.00M,
+                    Rating = "8",
                 },
                 new Movie
                 {
-                    Title = "Rio Bravo",
-                    ReleaseDate = DateTime.Parse("1959-4-15"),
-                    Genre = "Western",
-                    Price = 3.99M
+                    Title = "Sully",
+                    ReleaseDate = DateTime.Parse("2016-09-09"),
+                    Genre = "Drama, Biography",
+                    Price = 99.00M, 
+                    Rating = "A",
+                },
+                new Movie
+                {
+                    Title = "Outer Banks",
+                    ReleaseDate = DateTime.Parse("2020-04-15"),
+                    Genre = "Action Crime",
+                    Price = 80.00M, 
+                    Rating = "A",
                 }
             );
             context.SaveChanges();
