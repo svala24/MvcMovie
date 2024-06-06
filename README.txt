@@ -8,7 +8,10 @@ added MVC controller-empty
 1733 
 edited the content of controllers/helloworldcontroller.cs
 
+1734
 changed welcome string, added name and ID.
+
+1740
 Defined vala as a name by default.
 
 
@@ -19,6 +22,8 @@ Defined name "vala"
 
 1815 
 Created "HelloWordld" folder
+
+1816
 Added item, named "Index.cshtml"
 
 1822 
@@ -34,6 +39,8 @@ Suryarjsinh Vala
 
 1706
 added img library
+
+1708
 created .png file in paint.
 
 1710
@@ -55,9 +62,10 @@ changed name in views > MvcMovie to MvcMovie web page.
 1752
 created Welcome.cshtml file in view > shared folder
 
+1753
 faced some error in syntax (return value), commented old string
 
-fixed.
+fixed. :D
 
 https://localhost:7087/HelloWorld/Welcome?name=surya&numtimes=4
 
@@ -66,14 +74,17 @@ https://localhost:7087/HelloWorld/Welcome?name=surya&numtimes=4
 
 1755
 Added New Scaffolded Item in Controllers.
+
+1756
 Model class Movie(MvcMovie.Models)
 
 1757
 Migration initiated and timestamp
 20240523183338_InitialCreate
 
-1780
+1758
 Movie Index wasn't working, giving database error.
+
 Solved it by verifying dbo.Movie design in SQL database  and clearing browser cachce and 
 
 https://localhost:7087/Movies
@@ -132,12 +143,45 @@ Update-Database
 
 20240530163133_Rating.cs
 
-
+1742
 Suucessfully updated database!!
 
+1743
+Faced an error, when update the 'rating value' it gets removed!!
+
+1745
+Started to look for missing string.
+
+1750
 Edited MoviesController.cs
 Added 'rating' in public string
 Bind("Id,Title,ReleaseDate,Genre,Price,Rating")
+
+Finally fixed it!!
+
+
+
+
+
+
+2024-06-06
+Suryarajsinh Vala
+1700 UTC
+
+1706
+created a github account.
+
+1710
+pushed a new github repositary.
+
+1712
+uploaded whole MvcMovie project on git.
+
+1713
+verified movie titles in the seed data and run successfully.
+
+
+
 
 
 
